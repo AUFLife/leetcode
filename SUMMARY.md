@@ -2,4 +2,37 @@
 
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
+* [Dynamic Programming](dynamic-programming.md)
+* [Array](array.md)
+* Hash Table
+* Linked List
+* Math
+* [Two Pointer](twopointer.md)
+* String
+* Binary Search
+* Divide And Conquer
+* Backtracking
+* Stack
+* Heap
+* Greedy
+* Sort
+* Bit Manipulation
+* Tree
+* Depth-first Search
+* Breadth-first Search
+* Union Find
+* Graph
+* Topological Sort
+* Trie
+* Binary Indexed Tree
+* Segment Tree
+* Binary Search Tree
+* Recursion
+* Memoization
+* Queue
+* Minimax
+* Reservoir Sampling
+* Reservoir Sampling
+* Map
+* Geometry
 
