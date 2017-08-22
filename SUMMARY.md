@@ -16,7 +16,8 @@
 * Backtracking
 * Stack
 * Heap
-* Greedy
+* [Greedy](greedy.md)
+  * 406. Queue Reconstruction by Height
 * Sort
 * Bit Manipulation
 * Tree
