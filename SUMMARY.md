@@ -10,7 +10,7 @@
 * Linked List
 * Math
 * [Two Pointer](twopointer.md)
-* String
+* [String](string.md)
 * Binary Search
 * Divide And Conquer
 * Backtracking
@@ -18,10 +18,12 @@
 * Heap
 * [Greedy](greedy.md)
 * Sort
-* Bit Manipulation
+* [Bit Manipulation](bit-manipulation.md)
+  * 461.Hamming Distance
+  * [338.Count Bits](bit-manipulation/338count-bits.md)
 * [Tree](tree.md)
+* [Depth-first Search](depth-first-search.md)
   * 104. Maximum Depth of Binary Tree
-* Depth-first Search
 * Breadth-first Search
 * Union Find
 * Graph
