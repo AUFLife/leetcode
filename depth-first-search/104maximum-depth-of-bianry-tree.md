@@ -2,8 +2,6 @@
 
 Difficulty : **Easy**
 
-
-
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -38,15 +36,15 @@ Scala
 
 ```
 
- Java
+Java
 
-```
+```java
 /**
  * DFS(Deep First Search)
  * @param root
  * @return
  */
-public int maxDepth(TreeNode root) {
+    public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -69,6 +67,37 @@ public int maxDepth(TreeNode root) {
             }
         }
         return max;
+    }
+    
+    ---
+    
+    /**
+     * BFS(Breadth First Search)
+     * 声明一个队列，循环取出队列中每个节点，对应到树形结构则为每一层进行遍历
+     * Time Complexity: O(n^2) Spack Complexity: O(V + E)V: 节点数目，E：图中边的数目
+     * @param root
+     * @return
+     */
+    public static int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+        int max = 0;
+        int count = 0;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            while (size-- > 0) {
+                TreeNode node = queue.poll();
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+            count++;
+        }
+        return count;
     }
 ```
 
