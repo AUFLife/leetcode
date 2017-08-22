@@ -10,7 +10,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 Python
 
-```
+```py
 def maxDepth(self, root):
         """
         :type root: TreeNode
@@ -68,9 +68,9 @@ Java
         }
         return max;
     }
-    
+
     ---
-    
+
     /**
      * BFS(Breadth First Search)
      * 声明一个队列，循环取出队列中每个节点，对应到树形结构则为每一层进行遍历
