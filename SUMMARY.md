@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [Arithmetic Summary](chapter1.md)
 * [Dynamic Programming](dynamic-programming.md)
 * [Array](array.md)
 * [Hash Table](hash-table.md)
