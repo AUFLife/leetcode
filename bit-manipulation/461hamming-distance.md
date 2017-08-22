@@ -2,8 +2,6 @@
 
 Difficulty : **Easy**
 
-
-
 The[Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)between two integers is the number of positions at which the corresponding bits are different.
 
 Given two integers`x`and`y`, calculate the Hamming distance.
@@ -30,8 +28,19 @@ The above arrows point to positions where the corresponding bits are different.
 
 Python
 
-```
-
+```py
+def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        count = 0
+        xorValue = x ^ y
+        while xorValue != 0:
+            xorValue &= xorValue - 1
+            count += 1
+        return count 
 ```
 
 Scala
