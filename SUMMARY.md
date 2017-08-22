@@ -4,7 +4,8 @@
 * [First Chapter](chapter1.md)
 * [Dynamic Programming](dynamic-programming.md)
 * [Array](array.md)
-* Hash Table
+* [Hash Table](hash-table.md)
+  * [463.Island Perimeter](hash-table/463island-perimeter.md)
 * Linked List
 * Math
 * [Two Pointer](twopointer.md)
