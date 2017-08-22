@@ -2,8 +2,6 @@
 
 Difficulty : **Medium**
 
-
-
 Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers`(h, k)`, where`h`is the height of the person and`k`is the number of people in front of this person who have a height greater than or equal to`h`. Write an algorithm to reconstruct the queue.
 
 **Note:**  
@@ -30,8 +28,6 @@ E.g.
 * subarray after step 1:[[7,0],[7,1]]
 * subarray after step 2:[[7,0], [7,1]
 ```
-
-
 
 Python
 
@@ -74,7 +70,7 @@ Java
  *      2. 之所以需要从大到小，是因为在遍历时，我们可以随意的把当前元素往前移动（[7,0],[6,1],[7,1]）。它的前面都是比它大的，这样移动之后不会对前面的元素造成影响
  *      3. 反应到代码上就是先把元素记录下来，并从原数组中删除，再插入到指定位置
  *      4. 这里有个问题，对于h相同的元素，例如[5,2],[5,3]
- 
+
 public int[][] reconstructQueue(int[][] people) {
 
         if (people == null) return null;

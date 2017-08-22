@@ -17,10 +17,10 @@
 * Stack
 * Heap
 * [Greedy](greedy.md)
-  * 406. Queue Reconstruction by Height
 * Sort
 * Bit Manipulation
-* Tree
+* [Tree](tree.md)
+  * 104. Maximum Depth of Binary Tree
 * Depth-first Search
 * Breadth-first Search
 * Union Find
