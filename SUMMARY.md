@@ -22,8 +22,9 @@
   * 461.Hamming Distance
   * [338.Count Bits](bit-manipulation/338count-bits.md)
 * [Tree](tree.md)
+  * [617.Merge Two Binary Trees](tree/617merge-two-binary-trees.md)
 * [Depth-first Search](depth-first-search.md)
-  * 104. Maximum Depth of Binary Tree
+  * [104.Maximum Depth of Bianry Tree](depth-first-search/104maximum-depth-of-bianry-tree.md)
 * Breadth-first Search
 * Union Find
 * Graph
