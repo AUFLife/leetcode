@@ -2,8 +2,6 @@
 
 Difficulty : **Easy**
 
-
-
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -15,23 +13,19 @@ The maximum depth is the number of nodes along the longest path from the root no
 Python
 
 ```
-def maxDepth(self, root):
+def mergeTrees(self, t1, t2):
         """
-        :type root: TreeNode
-        :rtype: int
+        :type t1: TreeNode
+        :type t2: TreeNode
+        :rtype: TreeNode
         """
-        if not root:
-            return 0
-        from collections import deque
-        queue = deque([root, 1])
-        while queue:
-            node, val = queue.popleft()
-            if not node.left and not node.right and not queue:
-                return val
-            if node.left:
-                queue.append((node.left, val + 1))
-            if node.right:
-                queue.append((node.right, val + 1))
+        if t1 and t2:
+            root = TreeNode(t1.val + t2.val)
+            root.left = self.mergeTrees(t1.left, t1.right)
+            root.right = self.mergeTrees(t1.right, t2.right)
+            return root
+        else:
+            return t1 or t2
 ```
 
 Scala
