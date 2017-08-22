@@ -6,7 +6,7 @@
 * [Array](array.md)
 * [Hash Table](hash-table.md)
   * [463.Island Perimeter](hash-table/463island-perimeter.md)
-  * 136.Single Number
+  * [136.Single Number](hash-table/136single-number.md)
 * Linked List
 * Math
 * [Two Pointer](twopointer.md)
