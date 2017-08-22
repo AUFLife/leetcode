@@ -19,7 +19,7 @@
 * [Greedy](greedy.md)
 * Sort
 * [Bit Manipulation](bit-manipulation.md)
-  * 461.Hamming Distance
+  * [461.Hamming Distance](bit-manipulation/461hamming-distance.md)
   * [338.Count Bits](bit-manipulation/338count-bits.md)
 * [Tree](tree.md)
   * [617.Merge Two Binary Trees](tree/617merge-two-binary-trees.md)
