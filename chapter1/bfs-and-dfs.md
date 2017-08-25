@@ -1,4 +1,4 @@
-转自：http://www.jianshu.com/p/8c71c3a2b1a2
+转自：[http://www.jianshu.com/p/8c71c3a2b1a2](http://www.jianshu.com/p/8c71c3a2b1a2)
 
 #### 两种算法比较
 
@@ -52,72 +52,33 @@ eg.二叉树中和为某一值的路径
 ```
 class Solution {
 public:
-     vector
-<
-vector
-<
-int
->
->
- res;
-     vector
-<
-int
->
- path;
+     vector<vector<int>> res;
+     vector<int> path;
     void find(TreeNode* root,  int sum)
     {
         if (root == NULL)return;
-        path.push_back(root-
->
-val);
-        if (!root-
->
-left 
-&
-&
- !root-
->
-right 
-&
-&
- sum == root-
->
-val)
+        path.push_back(root->val);
+        if (!root->left && !root->right && sum == root->val)
             res.push_back(path);
         else
         {
-            if (root-
->
-left)
-                find(root-
->
-left, sum - root-
->
-val);
-            if (root-
->
-right)
-                find(root-
->
-right, sum - root-
->
-val);
+            if (root->left)
+                find(root->left, sum - root->val);
+            if (root->right)
+                find(root->right, sum - root->val);
         }
         path.pop_back();
     }
-    vector
-<
-vector
-<
-int
->
->
- FindPath(TreeNode* root,int expectNumber) {
+    vector<vector<int>> FindPath(TreeNode* root,int expectNumber) {
         find(root, expectNumber);
         return res;
     }
 };
+
+作者：会发光的二极管
+链接：http://www.jianshu.com/p/8c71c3a2b1a2
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 ### BFS算法
@@ -133,16 +94,8 @@ int
  * @param Vs 起点
  * @param Vd 终点
  */
-bool BFS(Node
-&
- Vs, Node
-&
- Vd){
-    queue
-<
-Node
->
- Q;
+bool BFS(Node& Vs, Node& Vd){
+    queue<Node> Q;
     Node Vn, Vw;
     int i;
 
@@ -163,10 +116,7 @@ Node
                 return true;//返回
             }
 
-            if (isValid(Vw) 
-&
-&
- !visit[Vw]){
+            if (isValid(Vw) && !visit[Vw]){
                 //Vw是一个合法的节点并且为白色节点
                 Q.push(Vw);//加入队列Q
                 hash(Vw) = true;//设置节点颜色
@@ -175,6 +125,11 @@ Node
     }
     return false;//无解
 }
+
+作者：会发光的二极管
+链接：http://www.jianshu.com/p/8c71c3a2b1a2
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 对于一个题目来说，要标志节点是否访问过，用数组是一种很快速的方法，但有时数据量太大，很难用一个大数组来记录时，采用hash是最好的做法。实际上visit数组在这里也是充当hash的作用。（PS：至于hash是什么？得自己去了解，它的作用是在O\(1\)的时间复杂度内取出某个值）
@@ -187,13 +142,9 @@ Node
 [程序员必须知道的十大算法](http://www.jianshu.com/p/c2c4b89aaa4b)  
 [图的遍历之DFS&BFS](http://www.cnblogs.com/skywang12345/p/3711483.html)
 
-
-
 转自：
 
 作者：会发光的二极管
 
-链接：http://www.jianshu.com/p/8c71c3a2b1a2
-
-
+链接：[http://www.jianshu.com/p/8c71c3a2b1a2](http://www.jianshu.com/p/8c71c3a2b1a2)
 
