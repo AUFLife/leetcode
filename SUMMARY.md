@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Arithmetic Summary](chapter1.md)
   * [Bitwise](chapter1/bitwise.md)
+  * [BFS & DFS](chapter1/bfs-and-dfs.md)
 * [Dynamic Programming](dynamic-programming.md)
 * [Array](array.md)
 * [Hash Table](hash-table.md)
