@@ -4,7 +4,7 @@ Write an algorithm to determine if a number is "happy".
 
 A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 \(where it will stay\), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
 
-**Example: **19 is a happy number
+**Example: **19 is a happy number
 
 * 1^2 + 9^2 = 8^2
 
@@ -16,6 +16,43 @@ A happy number is a number defined by the following process: Starting with any p
 
 **Credits:**  
 Special thanks to[@mithmatt](https://leetcode.com/discuss/user/mithmatt)and[@ts](https://leetcode.com/discuss/user/ts)for adding this problem and creating all test cases.
+
+Python
+
+```
+
+```
+
+Java
+
+```java
+/**
+ * Happy Number
+ * 这个数可能是两位，也可能是三位
+ */
+  Set<Integer> inLoop = new HashSet<Integer>();
+    int squareSum,remain;
+	while (inLoop.add(n)) {
+		squareSum = 0;
+		while (n > 0) {
+		    remain = n%10;				// 取余
+			squareSum += remain*remain;		
+			n /= 10;				// 取整
+		}
+		if (squareSum == 1)
+			return true;
+		else
+			n = squareSum;				下一轮次
+
+	}
+	return false;
+```
+
+Scala
+
+```
+
+```
 
 
 
