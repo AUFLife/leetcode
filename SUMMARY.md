@@ -10,7 +10,8 @@
 * [Hash Table](hash-table.md)
   * [463.Island Perimeter](hash-table/463island-perimeter.md)
   * [136.Single Number](hash-table/136single-number.md)
-* Linked List
+* [Linked List](linked-list.md)
+  * [202.Happy Number](linked-list/202happy-number.md)
 * Math
 * [Two Pointer](twopointer.md)
 * [String](string.md)
