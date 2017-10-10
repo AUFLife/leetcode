@@ -19,8 +19,20 @@ Special thanks to[@mithmatt](https://leetcode.com/discuss/user/mithmatt)and[@ts]
 
 Python
 
-```
-
+```py
+def isHappy(self, n):
+    """
+    :type n:int
+    :rtype: bool
+    """
+    mem = set(
+    while n != 1:
+        n = sum([int(i)**2 for i in str(n)])
+        if n not in mem:
+            mem.add(n)
+        else:
+            return False
+    return True
 ```
 
 Java
@@ -65,7 +77,7 @@ Scala
   else return0
   }
  }
- 
+
  def digitSquareSum(int n) {
   int sum = 0, tmp;
   while(n) {
