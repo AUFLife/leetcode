@@ -27,31 +27,54 @@ Java
 
 ```java
 /**
- * Happy Number
+ * 正常方法两个嵌套循环
  * 这个数可能是两位，也可能是三位
  */
   Set<Integer> inLoop = new HashSet<Integer>();
     int squareSum,remain;
-	while (inLoop.add(n)) {
-		squareSum = 0;
-		while (n > 0) {
-		    remain = n%10;				// 取余
-			squareSum += remain*remain;		
-			n /= 10;				// 取整
-		}
-		if (squareSum == 1)
-			return true;
-		else
-			n = squareSum;				下一轮次
+    while (inLoop.add(n)) {
+        squareSum = 0;
+        while (n > 0) {
+            remain = n%10;                  // 取余
+            squareSum += remain*remain;        
+            n /= 10;                        // 取整
+        }
+        if (squareSum == 1)
+            return true;
+        else
+            n = squareSum;                  // 下一轮次
 
-	}
-	return false;
+    }
+    return false;
 ```
 
 Scala
 
 ```
-
+/**
+ * 采用快慢指针的方式（Floyd Cycle detection alogorithm.）一
+ */
+ def isHappy(int n) {
+  int slow, fast = n;
+  slow = fast = n;
+  while(slow != return 1) {
+   slow = digitSquareSum(slow)
+   fast = digitSquareSum(fast)
+   fast = digitSquareSum(slow)
+  if (show == 1) return 1;
+  else return0
+  }
+ }
+ 
+ def digitSquareSum(int n) {
+  int sum = 0, tmp;
+  while(n) {
+   tmp = n & 10;
+   sum += sum * sum
+   n /= 10
+  }
+  return sum;
+ }
 ```
 
 
